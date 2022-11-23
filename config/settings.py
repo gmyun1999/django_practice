@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mywebsite.apps.MywebsiteConfig',
     'common.apps.CommonConfig',
+    'qnasite.apps.QnasiteConfig'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,6 +127,6 @@ LOGIN_REDIRECT_URL = '/'
 # 로그아웃 성공후 이동하는 URL
 LOGOUT_REDIRECT_URL = '/'
 
-#Django Session Timeout Code
+# Django Session Timeout Code
 SESSION_COOKIE_AGE = 1200
 SESSION_SAVE_EVERY_REQUEST = True

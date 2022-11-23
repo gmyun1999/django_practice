@@ -1,0 +1,41 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container px-4">
+        <div class="navbar-header">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#page-top">
+            <span class="navbar-toggler-icon" onclick="openSideNav()"></span>
+          </a>
+        </div>
+        <div id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item "><a class="nav-link" href="#about">마이페이지</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">알림</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">회원가입</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+</nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">질문게시판</a>
+  <a href="#">자유게시판</a>
+  <a href="#">질문게시판</a>
+  <a href="#">공지사항</a>
+</div>
+{% block script %}
+<script type="text/javascript">
+    function openSideNav() {
+    document.getElementById("mySidenav").style.width = "170px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+{% endblock %}

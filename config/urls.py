@@ -22,4 +22,5 @@ urlpatterns = [
     path('mywebsite/', include('mywebsite.urls')),
     path('', include('mywebsite.urls')),
     path('common/', include('common.urls')),
+    path('qnasite/', include('qnasite.urls'))
 ]
