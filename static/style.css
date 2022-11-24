@@ -1,38 +1,4 @@
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 60px;
-    left: 0;
-    background-color: white; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 30px; /* Place content 60px from the top */
-}
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 5px 5px 5px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    font-size: 18px;
-    margin-left: 70px;
-}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
